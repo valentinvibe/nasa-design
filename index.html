@@ -124,40 +124,67 @@
         <!-- Место для модального окна с формой -->
         
     <div class="usa-modal" id="example-modal-1" aria-labelledby="modal-1-heading" aria-describedby="modal-1-description">
-        <div class="usa-modal__content">
-            <div class="usa-modal__main">
-            <h2 class="usa-modal__heading" id="modal-1-heading">Are you sure you want to continue?</h2>
-            <div class="usa-prose">
-                <p id="modal-1-description">You have unsaved changes that will be lost.</p>
-            </div>
-            <div class="usa-modal__footer">
-            <ul class="usa-button-group">
-                <li class="usa-button-group__item">
-                <button type="button" class="usa-button" data-close-modal>
-                    Continue without saving
-                </button>
-                </li>
-                <li class="usa-button-group__item">
-                <button
-                    type="button"
-                    class="usa-button usa-button--unstyled padding-105 text-center"
-                    data-close-modal
-                >
-                    Go back
-                </button>
-                </li>
-            </ul>
-            </div>
-        </div>
         <button class="usa-button usa-modal__close" aria-label="Close this window" data-close-modal>
             <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-            <use xlink:href="/assets/img/sprite.svg#close"></use>
+                <use xlink:href="/assets/img/sprite.svg#close"></use>
             </svg>
-         </button>
-    </div>
-  <!-- </div>
-</div> -->
+        </button>
+        <div class="usa-modal__content">
+            <div class="usa-modal__main">
+                <h2 class="usa-modal__heading" id="modal-1-heading">Расскажите о себе</h2>
+                <div class="usa-prose">
+                    <p id="modal-1-description">и отправьтесь в космос вместе с NASA!</p>
+                </div>
+
+                <form class="usa-form">
+                    <label class="usa-label" for="input-type-text">Ваше имя</label>
+                    <input class="usa-input" id="input-type-text" name="user-name" type="text"/>
+
+                    <p class="usa-prose">Выберите планеты, которые хотели бы посетить</p>
+
+                    <div class="usa-checkbox">
+                        <input class="usa-checkbox__input" id="mercury" type="checkbox" name="planet" value="mercury"/>
+                        <label class="usa-checkbox__label" for="mercury">Меркурий</label>
+                    
+                        <input class="usa-checkbox__input" id="venus" type="checkbox" name="planet" value="venus"/>
+                        <label class="usa-checkbox__label" for="venus">Венера</label>
+                    
+                        <input class="usa-checkbox__input" id="mars" type="checkbox" name="planet" value="mars"/>
+                        <label class="usa-checkbox__label" for="mars">Марс</label>
+                    
+                        <input class="usa-checkbox__input" id="jupiter" type="checkbox" name="planet" value="jupiter"/>
+                        <label class="usa-checkbox__label" for="jupiter">Юпитер</label>
+                    
+                        <input class="usa-checkbox__input" id="saturn" type="checkbox" name="planet" value="saturn"/>
+                        <label class="usa-checkbox__label" for="saturn">Сатурн</label>
+                   
+                        <input class="usa-checkbox__input" id="uran" type="checkbox" name="planet" value="uran"/>
+                        <label class="usa-checkbox__label" for="uran">Уран</label>
+                    
+                        <input class="usa-checkbox__input" id="neptune" type="checkbox" name="planet" value="neptune"/>
+                        <label class="usa-checkbox__label" for="neptune">Нептун</label>
+                    </div>
+
+                    <p class="usa-prose">Выберите удобный способ оплаты</p>
+
+                    <div class="usa-radio">
+                        <input class="usa-radio__input" id="bitcoin" type="radio" name="money" value="bitcoin"/>
+                        <label class="usa-radio__label" for="bitcoin">Bitcoin</label>
+
+                        <input class="usa-radio__input" id="dogecoin" type="radio" name="money" value="dogecoin"/>
+                        <label class="usa-radio__label" for="dogecoin">Dogecoin</label>
+
+                        <input class="usa-radio__input" id="chillim" type="radio" name="money" value="chillim"/>
+                        <label class="usa-radio__label" for="chillim">Chillim</label>
+                    </div>
+
+                    <button type="submit" class="usa-button usa-button--secondary">Отправить заявку</button>
+                    
+                </form>
+                
+            </div>
+        </div>
       
-        <script src="assets/nasawds-3.0.177/js/uswds.min.js"></script>
+    <script src="assets/nasawds-3.0.177/js/uswds.min.js"></script>
   </body>
 </html>
